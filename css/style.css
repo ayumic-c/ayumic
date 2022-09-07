@@ -67,6 +67,9 @@ header #header-bar .container .contact-btn a.btn:hover {
   color: #6fc700;
   transform: none;
 }
+header #header-bar .container #hamburger {
+  cursor: pointer;
+}
 header #header-bar .container #hamburger button {
   background-color: transparent;
   color: inherit;
