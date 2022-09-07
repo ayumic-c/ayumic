@@ -85,11 +85,8 @@ header {
       }
 
       #hamburger {
-        button {
-          background-color: transparent;
-          color: inherit;
-        }
-
+        cursor: pointer;
+        
         .mobile-close {
           display: none;
         }
