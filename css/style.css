@@ -55,7 +55,6 @@ header #header-bar .container {
   align-items: center;
 }
 header #header-bar .container .contact-btn {
-  cursor: pointer;
   display: none;
 }
 header #header-bar .container .contact-btn a.btn {
@@ -67,6 +66,9 @@ header #header-bar .container .contact-btn a.btn:hover {
   background-color: #202020;
   color: #6fc700;
   transform: none;
+}
+header #header-bar .container #hamburger {
+  cursor: pointer;
 }
 header #header-bar .container #hamburger .mobile-close {
   display: none;
