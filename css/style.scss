@@ -69,7 +69,6 @@ header {
       align-items: center;
 
       .contact-btn {
-        cursor: pointer;
         display: none;
 
         a.btn {
@@ -86,6 +85,7 @@ header {
       }
 
       #hamburger {
+        cursor: pointer;
         .mobile-close {
           display: none;
         }
