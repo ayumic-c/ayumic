@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* ①より直感的なボックスサイズのモデルを使用 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ②デフォルトのマージンを削除 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ③高さは%ベースを使用 */
+html,
+body {
+  height: 100%;
+}
+
+/* ④rem設定 */
+html {
+  font-size: 62.5%;
+}
+
+/* ⑤タイポグラフィの微調整（アクセシブルなline-heightを追加、テキストのレンダリングを改善） */
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ⑥メディア要素のデフォルトを改善 */
+img,
+picture,
+video,
+iframe,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* ⑦フォームのfontに関するデフォルトを削除 */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+/* ⑧テキストのオーバーフローを回避 */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* ⑨ルートのスタックコンテキストを作成 */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ⑩カスタマイズ */
+ul {
+  list-style: none;
+  margin-bottom: -0.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+i {
+  cursor: pointer;
+}
+
+.container {
+  width: calc(100% - 4.8rem);
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* .btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  transition: all 0.3s;
+} */
