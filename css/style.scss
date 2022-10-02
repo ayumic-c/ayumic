@@ -3,24 +3,16 @@
 $cWhite: #ffffff;
 $cBlack: #202020;
 $cGray: #f4f4f4;
-$cMain: #6fc700;
+$cMain: #86d900;
 
 // common
 html {
-  &.fixed {
-    overflow-y: hidden;
-  }
+  scroll-behavior: smooth;
 }
 
 body {
   color: $cBlack;
   font-family: 'Saira', sans-serif;
-
-  &.fixed {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-  }
 }
 
 i {
@@ -58,103 +50,29 @@ i {
 // header
 header {
   background-color: $cMain;
-  height: 6.4rem;
   position: fixed;
   width: 100%;
-  z-index: 80;
+  z-index: 100;
 
-  #header-bar {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-
-    .container {
-      height: 6.4rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .contact-btn {
-        display: none;
-
-        a.btn {
-          color: $cBlack;
-          border: 2px solid $cBlack;
-          font-weight: bold;
-
-          &:hover {
-            background-color: $cBlack;
-            color: $cMain;
-            transform: none;
-          }
-        }
-      }
-
-      #hamburger {
-        cursor: pointer;
-        
-        .mobile-close {
-          display: none;
-        }
-
-        &.hbg-inview {
-          .mobile-open {
-            display: none;
-          }
-
-          .mobile-close {
-            display: block;
-          }
-        }
-      }
-    }
-
-    &.hbg-inview {
-      color: $cGray;
-    }
-  }
-
-  #mobile-menu {
-    background-color: $cBlack;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 90;
-    padding-top: 8.8rem;
-    transform: translateX(100%);
-    transition: all 0.1s;
+  .container {
+    height: 6.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     .contact-btn {
-      margin-bottom: 2.4rem;
-
-      a.btn {
-        background-color: $cBlack;
-        border: 2px solid $cGray;
+      .c-pc {
+        display: none;
+        color: $cBlack;
+        border: 2px solid $cBlack;
         font-weight: bold;
 
         &:hover {
-          background-color: $cMain;
-          color: $cBlack;
-          border: 2px solid $cMain;
+          background-color: $cBlack;
+          color: $cMain;
           transform: none;
         }
       }
-    }
-
-    .sns {
-      i {
-        font-size: 1.8rem;
-
-        &:hover {
-          color: $cMain;
-        }
-      }
-    }
-
-    &.hbg-inview {
-      transform: translateX(0);
-      color: $cGray;
     }
   }
 }
@@ -308,24 +226,18 @@ footer {
 // min-width: 1025px
 @media screen and (min-width: 1025px) {
   header {
-    height: 8.8rem;
-  
-    #header-bar {
-      .container {
-        height: 8.8rem;
-  
-        .contact-btn {
-          display: block;
-        }
-  
-        #hamburger {
+    .container {
+      height: 8rem;
+
+      .contact-btn {
+        .c-mobile {
           display: none;
         }
+        
+        .c-pc {
+          display: block;
+        }
       }
-    }
-  
-    #mobile-menu {
-      display: none;
     }
   }
 
