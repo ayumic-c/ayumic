@@ -17,15 +17,13 @@ i {
   justify-content: center;
 }
 .sns ul li + li {
-  margin-left: 1.8rem;
+  margin-left: 2rem;
 }
 
 .btn {
   background-color: #86d900;
   color: #f4f4f4;
   display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   padding: 1rem 2rem;
@@ -73,12 +71,12 @@ header .container .contact-btn .c-pc:hover {
 }
 
 main {
-  padding: 4.8rem 0;
+  padding: 3.2rem 0;
   line-height: 1.8;
   text-align: center;
 }
 main > section + section {
-  margin-top: 4.8rem;
+  margin-top: 3.2rem;
 }
 main h2 {
   font-size: 2.4rem;
@@ -86,13 +84,13 @@ main h2 {
 }
 main h3 {
   font-size: 2rem;
-  margin: 1.2rem 0;
+  margin-bottom: 0.8rem;
 }
 main .about .works {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 4.8rem;
-  margin-top: 4.8rem;
+  row-gap: 3.2rem;
+  margin-top: 3.2rem;
 }
 main .about .works .animation {
   background-color: #f4f4f4;
@@ -100,32 +98,25 @@ main .about .works .animation {
   box-shadow: 0 0 2px 1px rgba(32, 32, 32, 0.1);
 }
 main .about .works .animation .info {
-  padding: 4.8rem 2.4rem 3.2rem;
+  padding: 3.2rem 2.4rem;
 }
 main .about .works .animation .info img {
   width: 40%;
   height: 20%;
-  margin: 0 auto;
-  margin-bottom: 2rem;
+  margin: 0.8rem auto 1.6rem;
 }
-main .about .works .animation .info .sns {
-  margin-top: 2.4rem;
-}
-main .about .works .animation .info .sns i:hover {
-  color: #86d900;
-}
-main .about .works .animation .info-btn {
+main .about .works .animation .sns {
   border-top: 4px dashed #ffffff;
-  padding: 4.4rem 0;
+  padding: 3.2rem 2.4rem;
 }
-main .about .works .animation .info-btn i {
-  font-size: 1.6rem;
+main .about .works .animation .sns i:hover {
+  color: #86d900;
 }
 main #contact .container {
   background-color: #86d900;
   border-radius: 0.8rem;
   box-shadow: 0 0 2px 1px rgba(134, 217, 0, 0.1);
-  padding: 4.8rem 2.4rem;
+  padding: 3.2rem 2.4rem;
 }
 
 footer {
@@ -136,7 +127,7 @@ footer .container {
   padding: 4rem 0;
 }
 footer .container .sns i {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 footer .container .sns i:hover {
   color: #86d900;
@@ -166,7 +157,7 @@ footer .copyright {
     font-size: 2.8rem;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   header .container {
     height: 8rem;
   }
@@ -185,16 +176,16 @@ footer .copyright {
   main .about .works {
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 0;
+    column-gap: 3.2rem;
     margin-top: 6.4rem;
-    -moz-column-gap: 2.4rem;
-         column-gap: 2.4rem;
   }
   main .about .works .animation {
     display: grid;
     grid-template-rows: 1fr auto;
   }
   main .about .works .animation .info {
-    padding: 4.8rem 2.4rem 2.4rem;
+    height: 100%;
+    margin-bottom: -2.4rem;
   }
   main #contact .container {
     display: flex;
@@ -204,4 +195,4 @@ footer .copyright {
   main #contact .container h2 {
     margin-bottom: 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}

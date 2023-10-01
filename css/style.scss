@@ -26,7 +26,7 @@ i {
     justify-content: center;
 
     li + li {
-      margin-left: 1.8rem;
+      margin-left: 2rem;
     }
   }
 }
@@ -95,12 +95,12 @@ header {
 
 // main
 main {
-  padding: 4.8rem 0;
+  padding: 3.2rem 0;
   line-height: 1.8;
   text-align: center;
 
   & > section + section {
-    margin-top: 4.8rem;
+    margin-top: 3.2rem;
   }
 
   h2 {
@@ -110,15 +110,15 @@ main {
 
   h3 {
     font-size: 2rem;
-    margin: 1.2rem 0;
+    margin-bottom: 0.8rem;
   }
 
   .about {
     .works {
       display: grid;
       grid-template-columns: 1fr;
-      row-gap: 4.8rem;
-      margin-top: 4.8rem;
+      row-gap: 3.2rem;
+      margin-top: 3.2rem;
 
       .animation {
         background-color: $cGray;
@@ -126,32 +126,23 @@ main {
         box-shadow: 0 0 2px 1px rgba($color: $cBlack, $alpha: 0.1);
   
         .info {
-          padding: 4.8rem 2.4rem 3.2rem;
+          padding: 3.2rem 2.4rem;
   
           img {
             width: 40%;
             height: 20%;
-            margin: 0 auto;
-            margin-bottom: 2rem;
-          }
-    
-          .sns {
-            margin-top: 2.4rem;
-    
-            i {
-              &:hover {
-                color: $cMain;
-              }
-            }
+            margin: 0.8rem auto 1.6rem;
           }
         }
-  
-        .info-btn {
-          border-top: 4px dashed $cWhite;
-          padding: 4.4rem 0;
 
+        .sns {
+          border-top: 4px dashed $cWhite;
+          padding: 3.2rem 2.4rem;
+  
           i {
-            font-size: 1.6rem;
+            &:hover {
+              color: $cMain;
+            }
           }
         }
       }
@@ -163,7 +154,7 @@ main {
       background-color: $cMain;
       border-radius: 0.8rem;
       box-shadow: 0 0 2px 1px rgba($color: $cMain, $alpha: 0.1);
-      padding: 4.8rem 2.4rem;
+      padding: 3.2rem 2.4rem;
     }
   }
 }
@@ -179,7 +170,7 @@ footer {
 
     .sns {
       i {
-        font-size: 1.8rem;
+        font-size: 2rem;
 
         &:hover {
           color: $cMain;
@@ -223,8 +214,8 @@ footer {
   }
 }
 
-// min-width: 1025px
-@media screen and (min-width: 1025px) {
+// min-width: 1024px
+@media screen and (min-width: 1024px) {
   header {
     .container {
       height: 8rem;
@@ -252,15 +243,16 @@ footer {
       .works {
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 0;
+        column-gap: 3.2rem;
         margin-top: 6.4rem;
-        column-gap: 2.4rem;
 
         .animation {
           display: grid;
           grid-template-rows: 1fr auto;
-  
+
           .info {
-            padding: 4.8rem 2.4rem 2.4rem;
+            height: 100%;
+            margin-bottom: -2.4rem;
           }
         }
       }
